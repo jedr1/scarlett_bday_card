@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-6deg); }
+  50%       { transform: rotate(6deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+.animate-swing {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background: #FAF3EE;
+    color: #FF4F5A;
+    padding: 0 20px;
+}
